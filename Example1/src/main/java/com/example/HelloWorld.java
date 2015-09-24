@@ -3,17 +3,10 @@ package com.example;
 /**
  * Hello world!
  */
-public class HelloWorld
+public class HelloWorld implements Sample
 {
-	private String name;
+	public void show(String str) {
 
-	public void setName(String name)
-	{
-		this.name=name;
-	}
-
-	public void printHello()
-	{
-		System.out.println("Hello ! "+name);
+		System.out.print("Hello "+str);
 	}
 }
